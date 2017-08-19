@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*大小一定要一张图片的大小一样，保证只能显示一张*/
+/*overflow:hidden*/
+#carousel {
+  width: 790px;
+  height: 340px;
+  background-color: pink;
+  margin: 100px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/*保证ul能够一行放下所有的li*/
+#carousel ul {
+  height: 340px;
+  width: 1000%;
+  position: absolute;
+}
+
+#carousel ul li {
+  float: left;
+  width: 790px;
+  height: 340px;
+}
+
+#carousel a {
+  display: block;
+  width: 790px;
+  height: 340px;
+}
+
+#carousel img {
+  display: block;
+  width: 790px;
+  height: 340px;
+}
+
+#carousel ol {
+  width: 182px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -91px;
+  border-radius: 10px;
+}
+
+#carousel ol li {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  float: left;
+  margin-top: 4px;
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#carousel ol li.current {
+  background-color: red;
+}
+
+#arrow {
+  display: none;
+}
+
+#carousel .left,
+#carousel .right {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: #fff;
+  font-family: "宋体";
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
